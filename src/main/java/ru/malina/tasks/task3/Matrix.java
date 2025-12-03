@@ -5,18 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Matrix {
 
-    private int[][] matrix;
-
-    public void randomMatrix(int size) {
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
-                matrix[i][j] = (int) (Math.random() * 100 - 50);
-            }
-        }
-    }
-
-    public int getMinElementInDiagonal() {
-        randomMatrix(5);
+    public int getMinElementInDiagonal(int[][] matrix) {
         int min = Integer.MAX_VALUE;
 
         for (int i = 0; i < matrix.length; i++) {

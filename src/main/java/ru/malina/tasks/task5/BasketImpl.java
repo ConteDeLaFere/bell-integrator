@@ -1,9 +1,12 @@
 package ru.malina.tasks.task5;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Component
 public class BasketImpl implements Basket {
 
     private final Map<String, Integer> products;
